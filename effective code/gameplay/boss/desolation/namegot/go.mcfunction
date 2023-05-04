@@ -17,6 +17,10 @@ execute if score NAMEGOT NAMEGOT matches -1 in minecraft:the_nether if entity @a
 # Execute all action of Namegot
 execute if score NAMEGOT NAMEGOT matches 0.. in minecraft:the_nether if entity @a[x=3445,y=32,z=4323,dx=-40,dy=-18,dz=-40,gamemode=adventure] run function att2:gameplay/boss/desolation/namegot/action
 
+execute if score NAMEGOT NAMEGOT matches 0.. positioned as @e[type=wither_skeleton,tag=NAMEGOT] run effect give @a[distance=..2] blindness 2
+execute if score NAMEGOT NAMEGOT matches 0.. positioned as @e[type=wither_skeleton,tag=NAMEGOT] run particle portal ~ ~1 ~ 0.3 0.3 0.3 1 50
+execute if score NAMEGOT NAMEGOT matches 0.. positioned as @e[type=wither_skeleton,tag=NAMEGOT] run particle dust 0.8 0.8 0.8 0.01 
+
 #Process the timer when starting an attack
 execute if score NAMEGOT NAMEGOT matches 1.. in minecraft:the_nether if entity @a[x=3445,y=32,z=4323,dx=-40,dy=-18,dz=-40,gamemode=adventure] run scoreboard players add Timerattack NAMEGOT 1
 execute if score NAMEGOT NAMEGOT matches 0.. in minecraft:the_nether if score Timerattack NAMEGOT matches 135.. if entity @a[x=3445,y=32,z=4323,dx=-40,dy=-18,dz=-40,gamemode=adventure] run scoreboard players set NAMEGOT NAMEGOT 0
@@ -30,6 +34,9 @@ execute if score NAMEGOT NAMEGOT matches 4 run function att:gameplay/boss/desola
 execute if score NAMEGOT NAMEGOT matches 5 run function att:gameplay/boss/desolation/namegot/red/red_action
 execute if score NAMEGOT NAMEGOT matches 6 run function att:gameplay/boss/desolation/namegot/blue/blue_action
 execute if score NAMEGOT NAMEGOT matches 7 run function att:gameplay/boss/desolation/namegot/orange/orange_action
+
+
+execute if score NAMEGOT NAMEGOT matches 0.. if entity @a[tag=Namegot_Attack,scores={HEAL=6..}] run function att:gameplay/boss/desolation/namegot/black/black_attack
 
 
 

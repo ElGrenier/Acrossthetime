@@ -1,9 +1,9 @@
 #Copier collée du code de la bataille contre NAMEGOT avec les commandes traduites (plus ou moins)
 #Titre de Namégot
-title @a title [{"text":"         Namégot         ","underlined":true,"color":"dark_red"}]
-title @a subtitle [{"text":"Antique héro corrompu, ennemi des neuf royaumes...","color":"dark_gray"}]
+#title @a title [{"text":"         Namégot         ","underlined":true,"color":"dark_red"}]
+#title @a subtitle [{"text":"Antique héro corrompu, ennemi des neuf royaumes...","color":"dark_gray"}]
 #Faire apparaitre le boss :
-summon wither_skeleton 476 25 -24 {CustomName:'{"text":"Namégot"}',Invulnerable:false,PersistenceRequired:true,Attributes:[{Name:generic.max_health,Base:40,HealF:0.5},{Name:generic.attack_damage,Base:10.0},{Name:generic.follow_range,Base:50.0},{Name:generic.movement_speed,Base:0.25},{Name:generic.knockback_resistance,Base:0.6}],DropChances:[0.0f,0.0f,0.0f,0.0f,0.0f],HandItems:[{},{}],ArmorItems:[{},{},{},{}]}
+#summon wither_skeleton 476 25 -24 {CustomName:'{"text":"Namégot"}',Invulnerable:false,PersistenceRequired:true,Attributes:[{Name:generic.max_health,Base:40,HealF:0.5},{Name:generic.attack_damage,Base:10.0},{Name:generic.follow_range,Base:50.0},{Name:generic.movement_speed,Base:0.25},{Name:generic.knockback_resistance,Base:0.6}],DropChances:[0.0f,0.0f,0.0f,0.0f,0.0f],HandItems:[{},{}],ArmorItems:[{},{},{},{}]}
 
 
 #9 premiere fois 300 tick avant une attaque puis passage en mode Furie
@@ -11,9 +11,9 @@ summon wither_skeleton 476 25 -24 {CustomName:'{"text":"Namégot"}',Invulnerable
 
 #Lancer à l'infini : 
 # Effet de blindess sur les joueurs proche de lui
-execute positioned as @e[type=wither_skeleton,tag=NAMEGOT] run effect give @a[distance=..2] blindness 2 
-execute positioned as @e[type=wither_skeleton,tag=NAMEGOT] run particle portal ~ ~1 ~ 0.3 0.3 0.3 1 50
-execute positioned as @e[type=wither_skeleton,tag=NAMEGOT] run particle dust 0.8 0.8 0.8 0.01 
+#execute positioned as @e[type=wither_skeleton,tag=NAMEGOT] run effect give @a[distance=..2] blindness 2 
+#execute positioned as @e[type=wither_skeleton,tag=NAMEGOT] run particle portal ~ ~1 ~ 0.3 0.3 0.3 1 50
+#execute positioned as @e[type=wither_skeleton,tag=NAMEGOT] run particle dust 0.8 0.8 0.8 0.01 
 
 #Nombre aléatoire entre 1 et 9
 # 1 = Gris
@@ -27,22 +27,22 @@ execute positioned as @e[type=wither_skeleton,tag=NAMEGOT] run particle dust 0.8
 # 9 = Orange
 
 # mode furie
-execute positioned as @e[type=wither_skeleton,tag=NAMEGOT] run particle poof ~ ~0.5 ~ 1 1 1 1 1000
-title @a subtitle {"text":"HORS DE MA ROUTE","color":"dark_red","bold":true}
-title @a title {"text":" "}
-tellraw @a {"text":"Namégot : ","color":"red","extra":[{"text":"RaaaaaAAAAAHHHHHHHHH!","color":"dark_red","bold":true}]}
-playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 0.1 1
-playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 0.1 1
-playsound entity.skeleton_horse.death hostile @a ~ ~ ~ 1 0.1 1
-playsound entity.wither.death hostile @a ~ ~ ~ 1 0.1 1
-playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 0.1 1
-playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 0.1 1
-playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 1.6 1
-playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 1.6 1
-playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 1.6 1
-playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 1.6 1
-playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 1.6 1
-playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 1.6 1
+#execute positioned as @e[type=wither_skeleton,tag=NAMEGOT] run particle poof ~ ~0.5 ~ 1 1 1 1 1000
+#title @a subtitle {"text":"HORS DE MA ROUTE","color":"dark_red","bold":true}
+#title @a title {"text":" "}
+#tellraw @a {"text":"Namégot : ","color":"red","extra":[{"text":"RaaaaaAAAAAHHHHHHHHH!","color":"dark_red","bold":true}]}
+#playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 0.1 1
+#playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 0.1 1
+#playsound entity.skeleton_horse.death hostile @a ~ ~ ~ 1 0.1 1
+#playsound entity.wither.death hostile @a ~ ~ ~ 1 0.1 1
+#playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 0.1 1
+#playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 0.1 1
+#playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 1.6 1
+#playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 1.6 1
+#playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 1.6 1
+#playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 1.6 1
+#playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 1.6 1
+#playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 1.6 1
 
 
 
@@ -83,17 +83,17 @@ playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 1.6 1
 #QQ seconde plus tard
 #attribute @e[type=wither_skeleton,tag=NAMEGOT,limit=1] generic.movement_speed base set 0.25
 
-execute if entity @e[type=wither_skeleton,x=476,y=24,z=-24,distance=..2] run playsound entity.zombie_horse.death master @a ~ ~ ~ 1 1.2 1
-execute if entity @e[type=wither_skeleton,x=476,y=24,z=-24,distance=..2] run playsound entity.zombie_horse.death master @a ~ ~ ~ 1 1.6 1
-execute if entity @e[type=wither_skeleton,x=476,y=24,z=-24,distance=..2] run playsound entity.zombie_horse.death master @a ~ ~ ~ 1 2 1
+#execute if entity @e[type=wither_skeleton,x=476,y=24,z=-24,distance=..2] run playsound entity.zombie_horse.death master @a ~ ~ ~ 1 1.2 1
+#execute if entity @e[type=wither_skeleton,x=476,y=24,z=-24,distance=..2] run playsound entity.zombie_horse.death master @a ~ ~ ~ 1 1.6 1
+#execute if entity @e[type=wither_skeleton,x=476,y=24,z=-24,distance=..2] run playsound entity.zombie_horse.death master @a ~ ~ ~ 1 2 1
 
 ## En boucle jusqu'a que le tesfor réussi 
-effect give @a[scores={HEAL=6..}] instant_damage
-effect give @a[scores={HEAL=6..}] instant_damage
-effect give @a[scores={HEAL=6..}] instant_damage
-effect give @a[scores={HEAL=6..}] instant_damage
-execute at @a[x=497,y=23,z=-3,dx=-42,dy=2,dz=-42] run particle minecraft:dust 0.7 0.7 0.7 0.1 ~ ~ ~ 0 0 0 0.1 50 force
-execute if entity @a[scores={HEAL=6..}]
+#execute if entity @a[scores={HEAL=6..}] run effect give @a[scores={HEAL=6..}] instant_damage
+#execute if entity @a[scores={HEAL=6..}] run effect give @a[scores={HEAL=6..}] instant_damage
+#execute if entity @a[scores={HEAL=6..}] run effect give @a[scores={HEAL=6..}] instant_damage
+#execute if entity @a[scores={HEAL=6..}] run effect give @a[scores={HEAL=6..}] instant_damage
+#execute if entity @a[scores={HEAL=6..}] run execute at @a[x=497,y=23,z=-3,dx=-42,dy=2,dz=-42] run particle minecraft:dust 0.7 0.7 0.7 0.1 ~ ~ ~ 0 0 0 0.1 50 force
+
 
 #Gris
 ### Lancer un truc random qui genere un nombre entre 1 et 5 (ce nombre étant le nombre de TP)
@@ -311,14 +311,12 @@ execute if entity @a[scores={HEAL=6..}]
 
 
 ## Fin du combat : (entre chaque dialogue, mettre un timer)
-tellraw @a {"text":"/%/ Namégot /%/ : ","color":"red","bold":true,"extra":[{"text":"Enfin...","bold":false,"color":"dark_red"}]}
-tellraw @a {"text":"/%/ Namégot /%/ : ","color":"red","bold":true,"extra":[{"text":"C'est finit...","color":"dark_red","bold":false}]}
-tellraw @a {"text":"/%/ Namégot /%/ : ","color":"red","bold":true,"extra":[{"text":"Merci à toi mon ","color":"dark_red","bold":false,"extra":[{"text":"ami","color":"green","bold":false}]}]}
-tellraw @a {"text":"-°- Esprit Gardien : ","bold":true,"color":"dark_gray","extra":[{"text":"Incroyable! Tu as réalisé l'impossible! Namégot n'est plus, son esprit va enfin pouvoir trouver le repos... et le mien aussi.","italic":true,"color":"dark_green","bold":false}]}
-tellraw @a {"text":"-°- Esprit Gardien : ","bold":true,"color":"dark_gray","extra":[{"text":"Adieu, héro des 7 royaumes, la gemme des cauchemars est à toi!","italic":true,"color":"dark_green","bold":false}]}
+#tellraw @a {"text":"/%/ Namégot /%/ : ","color":"red","bold":true,"extra":[{"text":"Enfin...","bold":false,"color":"dark_red"}]}
+#tellraw @a {"text":"/%/ Namégot /%/ : ","color":"red","bold":true,"extra":[{"text":"C'est finit...","color":"dark_red","bold":false}]}
+#tellraw @a {"text":"/%/ Namégot /%/ : ","color":"red","bold":true,"extra":[{"text":"Merci à toi mon ","color":"dark_red","bold":false,"extra":[{"text":"ami","color":"green","bold":false}]}]}
+#tellraw @a {"text":"-°- Esprit Gardien : ","bold":true,"color":"dark_gray","extra":[{"text":"Incroyable! Tu as réalisé l'impossible! Namégot n'est plus, son esprit va enfin pouvoir trouver le repos... et le mien aussi.","italic":true,"color":"dark_green","bold":false}]}
+#tellraw @a {"text":"-°- Esprit Gardien : ","bold":true,"color":"dark_gray","extra":[{"text":"Adieu, héro des 7 royaumes, la gemme des cauchemars est à toi!","italic":true,"color":"dark_green","bold":false}]}
 
-fill 477 22 -25 475 22 -23 air
-fill 497 23 -24 497 27 -24 air
+#fill 477 22 -25 475 22 -23 air
+#fill 497 23 -24 497 27 -24 air
 
-#Idée : Faire que quand Namégot disparait, il se trouve au milieu de l'arene, avec peut être des particules sur lui, pour signifier qu'il est mort ? 
-#Faire sortir le joueur en passant par l'escalier au milieu (sans atteindre le coffre directement)
