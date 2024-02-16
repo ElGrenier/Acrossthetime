@@ -85,3 +85,25 @@
 
 #saute porte repos (entre boss lair)
 /tp @a[x=-377,y=61,z=-1416,dx=2,dy=-44,dz=-2,m=2] -661 92 -1514
+
+#tp avant gemme
+/tellraw @a {text:"Prenez d'abord la Gemme en laissant le coffre vide!",italic:true,color:gray}
+/tellraw @a {text:"First, take the Gem! And empty the chest.",italic:true,color:gray}
+
+#prendre gemme repos
+/tellraw @a {text:"C'est bon j'ai la Gemme du Repos! Je n'ai plus qu'à la rapporter au temple d'Eärndhel!",italic:true,color:aqua}
+/tellraw @a {text:"It's fine, I have the Gem of Rest! Now I just have to bring it to the temple of Ëarndhel!",italic:true,color:aqua}
+
+#tp après gemme
+/spawnpoint @a -349 105 -1287
+/tp @e[type=Wolf,x=-650,y=54,z=-1526,dx=-25,dy=-24,dz=25] -650 0 -1520
+/tp @e[type=SnowMan,x=-650,y=54,z=-1526,dx=-25,dy=-24,dz=25] -650 0 -1520
+/tp @e[type=VillagerGolem,x=-650,y=54,z=-1526,dx=-25,dy=-24,dz=25] -650 0 -1520
+/setblock -661 26 -1510 lapis_block
+/setblock -661 25 -1510 lapis_block
+/setblock -661 33 -1520 air
+/summon Slime ~ ~6 ~ {Size:1,PersistenceRequired:1,Riding:{id:Slime,Size:2,PersistenceRequired:1,Riding:{id:Slime,Size:3,PersistenceRequired:1,Riding:{id:Slime,Size:4,PersistenceRequired:1,Riding:{id:Slime,Size:5,PersistenceRequired:1,Riding:{id:Slime,Size:6,PersistenceRequired:1}}}}}}
+/summon Slime ~5 ~6 ~ {Size:1,PersistenceRequired:1,Riding:{id:Slime,Size:2,PersistenceRequired:1,Riding:{id:Slime,Size:3,PersistenceRequired:1,Riding:{id:Slime,Size:4,PersistenceRequired:1,Riding:{id:Slime,Size:5,PersistenceRequired:1,Riding:{id:Slime,Size:6,PersistenceRequired:1}}}}}}
+/summon LavaSlime ~ ~3 ~ {PersistenceRequired:1,Size:5,CustomName:Tamdor,CustomNameVisible:1,DropChances:[0.0f,0.0f,0.0f,0.0f,0.2f],Equipment:[{id:276,Count:1,tag:{ench:[{id:16,lvl:2}]}},{id:306,Count:1,tag:{ench:[{id:0,lvl:2}]}},{id:303,Count:1,tag:{ench:[{id:0,lvl:2}]}},{id:399,Count:1,tag:{display:{Name:Ame de Tamdor}}},{id:378,Count:1,tag:{display:{Name:ECAILLE SOUVERAINE DU CHAOS,Lore:["Précieux!!","Très, TRES précieux........"]}}}]}
+#délai
+/tp @a -349 105 -1287
