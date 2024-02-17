@@ -2,6 +2,37 @@
 #fin de dialogue
 /tellraw @a {text:" - - - - - ",color:dark_gray,italic:true,bold:true}
 
+###kakkara
+#cain deckard
+/summon PigZombie 171 64.5 -971 {Rotation:[0.0f,0.0f],NoAI:1,Invulnerable:1,CustomName:CAIN DECKARD,Silent:1,PersistenceRequired:1,Attributes:[{Name:generic.maxHealth,Base:30,HealF:0.5},{Name:generic.attackDamage,Base:0.0},{name:generic.movmentSpeed,Base:0.0}],DropChances:[0.0f,0.0f,0.0f,0.0f,0.0f],Equipment:[{},{id:301,Count:1,tag:{display:{color:15644715}}},{id:300,Count:1,tag:{display:{color:15644715}}},{id:299,Count:1,tag:{display:{color:15644715}}},{id:397,Damage:3,tag:{SkullOwner:MHF_Villager}}]}
+/testfor @a[x=171,y=66,z=-971,r=3]
+/tellraw @a {text:" °-° : ",bold:true,color:dark_gray,extra:[{text:"<Parler à Cain Deckard>",bold:false,color:green,clickEvent:{action:run_command,value:"/setblock 219 44 -970 redstone_block"},hoverEvent:{action:show_text,value:"Cliquez pour parler"}}]}
+
+#intendant
+/summon PigZombie 210 64.5 -985 {Rotation:[0.0f,0.0f],NoAI:1,Invulnerable:1,CustomName:INTENDANT,Silent:1,PersistenceRequired:1,Attributes:[{Name:generic.maxHealth,Base:30,HealF:0.5},{Name:generic.attackDamage,Base:0.0},{name:generic.movmentSpeed,Base:0.0}],DropChances:[0.0f,0.0f,0.0f,0.0f,0.0f],Equipment:[{},{id:301,Count:1,tag:{display:{color:15644715}}},{id:300,Count:1,tag:{display:{color:15644715}}},{id:299,Count:1,tag:{display:{color:15644715}}},{id:397,Damage:3,tag:{SkullOwner:MHF_Villager}}],Riding:{id:Wolf,Silent:1,NoAI:1,Invulnerable:1,Silent:1,PersistenceRequired:1,Attributes:[{Name:generic.maxHealth,Base:30,HealF:0.5},{Name:generic.attackDamage,Base:0.0},{name:generic.movmentSpeed,Base:0.0}],ActiveEffects:[{Id:14,Amplifier:1,Duration:640000,Ambient:1}]}}
+/testfor @a[x=208,y=66,z=-985,r=3]
+/tellraw @a {text:" °-° : ",bold:true,color:dark_gray,extra:[{text:"<Parler à Intendant>",bold:false,color:green,clickEvent:{action:run_command,value:"/setblock 217 44 -970 redstone_block"},hoverEvent:{action:show_text,value:"Cliquez pour parler"}}]}
+
+#sacha
+/summon PigZombie 196 64.5 -997 {Rotation:[0.0f,0.0f],NoAI:1,Invulnerable:1,CustomName:SACHA,Silent:1,PersistenceRequired:1,Attributes:[{Name:generic.maxHealth,Base:30,HealF:0.5},{Name:generic.attackDamage,Base:0.0},{name:generic.movmentSpeed,Base:0.0}],DropChances:[0.0f,0.0f,0.0f,0.0f,0.0f],Equipment:[{},{id:301,Count:1,tag:{display:{color:15644715}}},{id:300,Count:1,tag:{display:{color:15644715}}},{id:299,Count:1,tag:{display:{color:15644715}}},{id:397,Damage:3,tag:{SkullOwner:MHF_Villager}}]}
+/testfor @a[x=196,y=67,z=-997,r=3]
+/tellraw @a {text:" °-° : ",bold:true,color:dark_gray,extra:[{text:"<Parler à Sacha>",bold:false,color:green,clickEvent:{action:run_command,value:"/setblock 215 44 -970 redstone_block"},hoverEvent:{action:show_text,value:"Cliquez pour parler"}}]}
+
+#lurn
+/summon PigZombie 220 64.5 -982 {Rotation:[0.0f,0.0f],NoAI:1,Invulnerable:1,CustomName:LURN,Silent:1,PersistenceRequired:1,Attributes:[{Name:generic.maxHealth,Base:30,HealF:0.5},{Name:generic.attackDamage,Base:0.0},{name:generic.movmentSpeed,Base:0.0}],DropChances:[0.0f,0.0f,0.0f,0.0f,0.0f],Equipment:[{},{id:301,Count:1,tag:{display:{color:15644715}}},{id:300,Count:1,tag:{display:{color:15644715}}},{id:299,Count:1,tag:{display:{color:15644715}}},{id:397,Damage:3,tag:{SkullOwner:MHF_Villager}}]}
+/testfor @a[x=220,y=66,z=-980,r=3]
+/tellraw @a {text:" °-° : ",bold:true,color:dark_gray,extra:[{text:"<Parler à Lurn>",bold:false,color:green,clickEvent:{action:run_command,value:"/setblock 213 44 -970 redstone_block"},hoverEvent:{action:show_text,value:"Cliquez pour parler"}}]}
+
+#zol
+/summon PigZombie 163 64.5 -961 {Rotation:[0.0f,0.0f],NoAI:1,Invulnerable:1,CustomName:ZOL,Silent:1,PersistenceRequired:1,Attributes:[{Name:generic.maxHealth,Base:30,HealF:0.5},{Name:generic.attackDamage,Base:0.0},{name:generic.movmentSpeed,Base:0.0}],DropChances:[0.0f,0.0f,0.0f,0.0f,0.0f],Equipment:[{},{id:301,Count:1,tag:{display:{color:15644715}}},{id:300,Count:1,tag:{display:{color:15644715}}},{id:299,Count:1,tag:{display:{color:15644715}}},{id:397,Damage:3,tag:{SkullOwner:MHF_Villager}}]}
+/testfor @a[x=163,y=66,z=-961,r=3]
+/tellraw @a {text:" °-° : ",bold:true,color:dark_gray,extra:[{text:"<Parler à Zol>",bold:false,color:green,clickEvent:{action:run_command,value:"/setblock 217 44 -962 redstone_block"},hoverEvent:{action:show_text,value:"Cliquez pour parler"}}]}
+
+#sam
+/summon PigZombie 178 64.5 -993 {Rotation:[0.0f,0.0f],NoAI:1,Invulnerable:1,CustomName:SAM,Silent:1,PersistenceRequired:1,Attributes:[{Name:generic.maxHealth,Base:30,HealF:0.5},{Name:generic.attackDamage,Base:0.0},{name:generic.movmentSpeed,Base:0.0}],DropChances:[0.0f,0.0f,0.0f,0.0f,0.0f],Equipment:[{},{id:301,Count:1,tag:{display:{color:15644715}}},{id:300,Count:1,tag:{display:{color:15644715}}},{id:299,Count:1,tag:{display:{color:15644715}}},{id:397,Damage:3,tag:{SkullOwner:MHF_Villager}}]}
+/testfor @a[x=178,y=66,z=-993,r=3]
+/tellraw @a {text:" °-° : ",bold:true,color:dark_gray,extra:[{text:"<Parler à Sam>",bold:false,color:green,clickEvent:{action:run_command,value:"/setblock 219 44 -962 redstone_block"},hoverEvent:{action:show_text,value:"Cliquez pour parler"}}]}
+
 ###otauria
 #ganza
 /summon Zombie -281 131 -1423.5 {Rotation:[0.0f,0.0f],NoAI:1,Invulnerable:1,CustomName:GANZA,Silent:1,PersistenceRequired:1,Attributes:[{Name:generic.maxHealth,Base:30,HealF:0.5},{Name:generic.attackDamage,Base:0.0},{name:generic.movmentSpeed,Base:0.0}],DropChances:[0.0f,0.0f,0.0f,0.0f,0.0f],Equipment:[{},{id:301,Count:1,tag:{display:{color:552393}}},{id:300,Count:1,tag:{display:{color:552393}}},{id:299,Count:1,tag:{display:{color:552393}}},{id:397,Damage:3,tag:{SkullOwner:MHF_Squid}}],Riding:{id:Wolf,Silent:1,NoAI:1,Invulnerable:1,Silent:1,PersistenceRequired:1,Attributes:[{Name:generic.maxHealth,Base:30,HealF:0.5},{Name:generic.attackDamage,Base:0.0},{name:generic.movmentSpeed,Base:0.0}],ActiveEffects:[{Id:14,Amplifier:1,Duration:640000,Ambient:1}]}}
