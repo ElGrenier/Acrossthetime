@@ -1,5 +1,5 @@
 
-#tp village
+#tp earndhel
 /tp @p -291 102 -1258
 
 #labo activation machine

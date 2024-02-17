@@ -2,7 +2,7 @@
 #fin de dialogue
 /tellraw @a {text:" - - - - - ",color:dark_gray,italic:true,bold:true}
 
-#otauria
+###otauria
 #ganza
 /summon Zombie -281 131 -1423.5 {Rotation:[0.0f,0.0f],NoAI:1,Invulnerable:1,CustomName:GANZA,Silent:1,PersistenceRequired:1,Attributes:[{Name:generic.maxHealth,Base:30,HealF:0.5},{Name:generic.attackDamage,Base:0.0},{name:generic.movmentSpeed,Base:0.0}],DropChances:[0.0f,0.0f,0.0f,0.0f,0.0f],Equipment:[{},{id:301,Count:1,tag:{display:{color:552393}}},{id:300,Count:1,tag:{display:{color:552393}}},{id:299,Count:1,tag:{display:{color:552393}}},{id:397,Damage:3,tag:{SkullOwner:MHF_Squid}}],Riding:{id:Wolf,Silent:1,NoAI:1,Invulnerable:1,Silent:1,PersistenceRequired:1,Attributes:[{Name:generic.maxHealth,Base:30,HealF:0.5},{Name:generic.attackDamage,Base:0.0},{name:generic.movmentSpeed,Base:0.0}],ActiveEffects:[{Id:14,Amplifier:1,Duration:640000,Ambient:1}]}}
 /testfor @a[x=-281,y=132,z=-1423,r=3]
