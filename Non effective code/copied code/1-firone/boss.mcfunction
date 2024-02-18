@@ -31,13 +31,13 @@
 /summon FireworksRocketEntity 158 65 -1355 {LifeTime:10,FireworksItem:{id:401,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:0,Trail:1,Colors:[1638152],FadeColors:[5064335]},{Type:1,Flicker:1,Trail:0,Colors:[16712965],FadeColors:[16252692]},{Type:4,Flicker:0,Trail:1,Colors:[1108963],FadeColors:[1116914]},{Type:2,Flicker:1,Trail:0,Colors:[0],FadeColors:[16777215]}]}}}}
 /playsound random.levelup @a ~ ~ ~ 1 0.6 1
 /playsound note.pling @a ~ ~ ~ 1 1.7 1
-/summon XPOrb 158 65 -1355 {Value:5}
-/summon XPOrb 158 65 -1355 {Value:5}
-/summon XPOrb 158 65 -1355 {Value:5}
-/summon XPOrb 158 65 -1355 {Value:5}
-
-/summon XPOrb 158 65 -1355 {Value:5}
+#délai
 /playsound note.pling @a ~ ~ ~ 1 2 1
+/summon XPOrb 158 65 -1355 {Value:5}
+/summon XPOrb 158 65 -1355 {Value:5}
+/summon XPOrb 158 65 -1355 {Value:5}
+/summon XPOrb 158 65 -1355 {Value:5}
+/summon XPOrb 158 65 -1355 {Value:5}
 /summon XPOrb 158 65 -1355 {Value:5}
 
 #boss lock open
