@@ -61,7 +61,7 @@
 /tp @p[x=-463,y=9,z=-1388,r=3] -456 71 -1401
 
 #deux tours activées
-/fill -515 9 -1398 -515 3 -1405 redstone_block 0 replace air
+/fill -515 9 -1398 -515 3 -1405 redstone_block replace air
 
 #place clé repos cassée
 /tellraw @a {text:"La clef a été rechargée... Mais on entend comme un grondement venant de la salle principale...",italic:true,color:gray}
