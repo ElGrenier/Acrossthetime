@@ -19,7 +19,7 @@ execute if score Timerattack NAMEGOT matches 40 at @e[type=wither_skeleton,tag=N
 
 execute if score Timerattack NAMEGOT matches 40.. at @e[type=wither_skeleton,tag=NAMEGOT] run particle block redstone_block ~ ~1 ~ 1 1 1 2 100
 
-execute if score Timerattack NAMEGOT matches 41 at @e[type=wither_skeleton,tag=NAMEGOT] run attribute @e[type=wither_skeleton,tag=NAMEGOT,limit=1] generic.movement_speed base set 0.35
+execute if score Timerattack NAMEGOT matches 41 at @e[type=wither_skeleton,tag=NAMEGOT] run attribute @e[type=wither_skeleton,tag=NAMEGOT,limit=1] movement_speed base set 0.35
 execute if score Timerattack NAMEGOT matches 41 at @e[type=wither_skeleton,tag=NAMEGOT] run playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 0.1 1
 execute if score Timerattack NAMEGOT matches 41 at @e[type=wither_skeleton,tag=NAMEGOT] run playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 0.1 1
 execute if score Timerattack NAMEGOT matches 41 at @e[type=wither_skeleton,tag=NAMEGOT] run playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 0.1 1
@@ -27,8 +27,8 @@ execute if score Timerattack NAMEGOT matches 41 at @e[type=wither_skeleton,tag=N
 execute if score Timerattack NAMEGOT matches 41 at @e[type=wither_skeleton,tag=NAMEGOT] run playsound entity.skeleton_horse.death hostile @a ~ ~ ~ 1 0.1 1
 execute if score Timerattack NAMEGOT matches 41 at @e[type=wither_skeleton,tag=NAMEGOT] run playsound entity.zombie_horse.death hostile @a ~ ~ ~ 1 0.1 1
 
-execute if score Timerattack NAMEGOT matches 59 at @e[type=wither_skeleton,tag=NAMEGOT] run attribute @e[type=wither_skeleton,tag=NAMEGOT,limit=1] generic.movement_speed base set 0.25
-execute if score Timerattack NAMEGOT matches 59 at @e[type=wither_skeleton,tag=NAMEGOT] run data merge entity @e[type=wither_skeleton,tag=NAMEGOT,limit=1] {Invulnerable:0}
+execute if score Timerattack NAMEGOT matches 59 at @e[type=wither_skeleton,tag=NAMEGOT] run attribute @e[type=wither_skeleton,tag=NAMEGOT,limit=1] movement_speed base set 0.25
+execute if score Timerattack NAMEGOT matches 59 at @e[type=wither_skeleton,tag=NAMEGOT] run data merge entity @e[type=wither_skeleton,tag=NAMEGOT,limit=1] {Invulnerable:0b}
 execute if score Timerattack NAMEGOT matches 59 at @e[type=wither_skeleton,tag=NAMEGOT] run tellraw @a {"text":"-°- Esprit Gardien : ","bold":true,"color":"dark_gray","extra":[{"text":"C'est bon j'ai repris le contrôle... Tu peux attaquer!","italic":true,"color":"dark_green","bold":false}]}
 
 scoreboard players set NAMEGOT NAMEGOT 0
