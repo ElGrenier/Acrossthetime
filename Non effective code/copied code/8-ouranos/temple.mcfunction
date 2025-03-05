@@ -16,31 +16,6 @@
 /setblock -1459 112 -1227 minecraft:redstone_block
 
 
-#Canon from North Tower to Middle Island
-/playsound mob.zombie.wood @a -1480 111 -1134 1 1 1
-/setblock 21 60 78 redstone_block
-#=>
-/tp @p[x=-1458,y=116,z=-1217,r=2] -1459 120 -1206
-/tp @p[x=-1459,y=120,z=-1206,r=7] -1461 124 -1185
-/tp @p[x=-1461,y=124,z=-1185,r=7] -1468 120 -1167
-/tp @p[x=-1468,y=120,z=-1167,r=7] -1474 115 -1145
-/tp @p[x=-1474,y=115,z=-1145,r=7] -1478 111 -1130
-/tp @p[x=-1478,y=111,z=-1130,r=7] -1482 107 -1118
-
-#Canon From North Tower to Dance des lames Island
-/playsound mob.zombie.wood @a -1480 111 -1134 1 1 1
-/setblock 29 56 78 redstone_block
-#=>
-/tp @p[x=-1459,y=116,z=-1256,r=2] -1461 121 -1274
-/tp @p[x=-1461,y=121,z=-1274,r=7] -1461 131 -1294
-/tp @p[x=-1461,y=131,z=-1294,r=7] -1470 142 -1316
-/tp @p[x=-1470,y=142,z=-1316,r=7] -1475 149 -1351
-/tp @p[x=-1475,y=149,z=-1351,r=7] -1478 150 -1381
-/tp @p[x=-1478,y=150,z=-1381,r=7] -1480 143 -1404
-
-
-
-
 ############################## South Tower #########################################
 #First Button 
 /setblock -1456 134 -966 gold_block
@@ -328,4 +303,147 @@
 
 /playsound random.levelup @a
 /tellraw @a {text:"Le système fonctionne à nouveau! L'électricité est revenue dans cette partie d'Ouranos!",color:aqua}
-/setblock -1464 41 -971 redstone_block
+#Note : The setblock air remove the monster spawner
+/setblock -1468 42 -973 air
+/setblock -1468 42 -954 air
+/setblock -1449 42 -973 air
+/setblock -1449 42 -954 air
+/setblock -1459 42 -963 air
+
+
+#Add the Thunderball command block somewhen
+
+
+
+################################### Danse des lames Island #####################################
+#Sign on the wall at the entrance
+/tellraw @a {text:"Il y a une inscription sur le mur : Ici au sanctuaire du vent, le vent est très puissant, si bien que vous ne pourrez pas passer au travers... Cependant vous pourrez marcher dessus!",color:aqua}
+
+#Side button next to the wall with the sign
+/setblock -1460 145 -1440 minecraft:air
+/playsound random.levelup @a
+
+
+#Right Tower button
+/setblock -1493 141 -1424 air
+
+#Left tower button 
+/setblock -1493 141 -1422 air
+
+#if both button are activated
+/setblock -1500 139 -1437 gold_block
+/setblock -1501 137 -1434 gold_block
+/setblock -1502 133 -1432 gold_block
+/setblock -1503 132 -1432 gold_block
+
+#When the chest with the "Petite clé" is oppened
+/setblock -1504 136 -1414 minecraft:air
+/setblock -1509 132 -1430 minecraft:gold_block
+/setblock -1509 133 -1431 minecraft:gold_block
+/setblock -1509 134 -1432 minecraft:gold_block
+/setblock -1509 134 -1433 minecraft:gold_block
+
+#Canon on the tower after the "Petite Clé"
+/tp @p -1517 155 -1402
+
+#Race 
+/setblock -1516 153 -1399 wool
+/summon MinecartRideable -1517 151 -1399 {CustomDisplayTile:1,DisplayTile:174,DisplayData:1,DisplayOffset:70}
+/tp @a[x=-1516,y=155,z=-1447,r=43] -1517 155 -1403
+/tellraw @a {text:"Appuyer sur le bouton de l'enclencheur en bout de ligne avant que le courant ne l'atteigne.",italic:true,color:gray}
+/setblock -1520 152 -1444 redstone_block
+/setblock -1520 152 -1444 air
+
+
+#If enclencher is activated first
+/tellraw @a {text:"Le passage est ouvert! Des plateformes semblent s'être décroché de la structure.",color:aqua}
+/setblock -1516 152 -1400 air
+/setblock -1513 154 -1448 gold_block
+/setblock -1515 152 -1399 minecraft:redstone_wire
+/setblock -1511 154 -1450 gold_block
+/setblock -1520 152 -1444 redstone_block
+/setblock -1509 154 -1452 gold_block
+/setblock -1518 154 -1446 grass
+/setblock -1518 154 -1447 grass
+/setblock -1518 154 -1448 grass
+
+#If the player tries to redo the start after wining :
+/tellraw @a {text:"Les plateformes ont été activées, ce générateur de courant s'est arrêté.",italic:true,color:gray}
+
+#If the minecart is first
+/setblock -1516 153 -1399 air
+
+#Second Catapult after the race
+/tp @p -1517 155 -1445
+
+#Bridge Button
+/tellraw @a {text:"Ce souffleur céleste ne fonctionne plus... Il semble avoir besoin de 4 sources d'énergie.",color:aqua}
+
+#Hidden button -1456 144 -1457
+/setblock -1478 140 -1466 minecraft:packed_ice
+/setblock -1478 137 -1463 minecraft:air
+
+#Hidden Button tower -1497 142 -1445
+/setblock -1484 140 -1464 minecraft:packed_ice
+/setblock -1480 137 -1463 minecraft:air
+
+#Hidden Button -1467 138 -1449
+/setblock -1478 140 -1464 minecraft:packed_ice
+/setblock -1479 137 -1463 minecraft:air
+
+#Hidden Button -1481 149 -1436
+/setblock -1481 137 -1463 minecraft:air
+/setblock -1484 140 -1466 minecraft:packed_ice
+
+#If the 4 source of energy are put
+/setblock -1481 142 -1460 barrier
+/setblock -1481 142 -1459 barrier
+/setblock -1481 142 -1458 barrier
+/setblock -1481 142 -1457 barrier
+/setblock -1481 142 -1456 barrier
+/setblock -1481 142 -1455 barrier
+/setblock -1481 142 -1454 barrier
+/setblock -1479 138 -1466 minecraft:iron_block
+/setblock -1479 136 -1431 air
+#?
+/tellraw @a {text:"Le souffleur fonctionne correctement! Je peux traverser le vide!",color:aqua}
+
+#################################### NORTH TOWER ########################################
+
+
+#Canon from North Tower to Middle Island
+/playsound mob.zombie.wood @a -1480 111 -1134 1 1 1
+/setblock 21 60 78 redstone_block
+#=>
+/tp @p[x=-1458,y=116,z=-1217,r=2] -1459 120 -1206
+/tp @p[x=-1459,y=120,z=-1206,r=7] -1461 124 -1185
+/tp @p[x=-1461,y=124,z=-1185,r=7] -1468 120 -1167
+/tp @p[x=-1468,y=120,z=-1167,r=7] -1474 115 -1145
+/tp @p[x=-1474,y=115,z=-1145,r=7] -1478 111 -1130
+/tp @p[x=-1478,y=111,z=-1130,r=7] -1482 107 -1118
+
+#Canon From North Tower to Dance des lames Island
+/playsound mob.zombie.wood @a -1480 111 -1134 1 1 1
+/setblock 29 56 78 redstone_block
+#=>
+/tp @p[x=-1459,y=116,z=-1256,r=2] -1461 121 -1274
+/tp @p[x=-1461,y=121,z=-1274,r=7] -1461 131 -1294
+/tp @p[x=-1461,y=131,z=-1294,r=7] -1470 142 -1316
+/tp @p[x=-1470,y=142,z=-1316,r=7] -1475 149 -1351
+/tp @p[x=-1475,y=149,z=-1351,r=7] -1478 150 -1381
+/tp @p[x=-1478,y=150,z=-1381,r=7] -1480 143 -1404
+
+#Catapult From Danse des Lames Island to North TOWER 
+/playsound mob.zombie.wood @a -1481 148 -1391 1 1 1
+/tp @p[x=-1485,y=143,z=-1407,r=2] -1481 148 -1391
+/tp @p[x=-1481,y=148,z=-1391,r=7] -1478 151 -1368
+/tp @p[x=-1478,y=151,z=-1368,r=7] -1474 146 -1342
+/tp @p[x=-1474,y=146,z=-1342,r=7] -1470 139 -1316
+/tp @p[x=-1470,y=139,z=-1316,r=7] -1468 131 -1295
+/tp @p[x=-1468,y=131,z=-1295,r=7] -1465 123 -1271
+/tp @p[x=-1465,y=123,z=-1271,r=7] -1462 116 -1253
+#Unsure if it is activated or not
+/tp @p[x=-1485,y=143,z=-1407,r=2] -1481 148 -1391
+
+
+
