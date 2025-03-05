@@ -13,10 +13,11 @@
 # 8 = Orange
 # 9 = Orange
 
-summon area_effect_cloud ~ ~ ~ {Tags:["random_attack"]}
-execute store result score ATTACK NAMEGOT run data get entity @e[type=area_effect_cloud,tag=random_attack,limit=1] UUID[0] 1
-scoreboard players operation ATTACK NAMEGOT %= MAXATTACK NAMEGOT
-kill @e[type=area_effect_cloud,tag=random_attack]
+#summon area_effect_cloud ~ ~ ~ {Tags:["random_attack"]}
+#execute store result score ATTACK NAMEGOT run data get entity @e[type=area_effect_cloud,tag=random_attack,limit=1] UUID[0] 1
+#scoreboard players operation ATTACK NAMEGOT %= MAXATTACK NAMEGOT
+#kill @e[type=area_effect_cloud,tag=random_attack]
+execute store result score ATTACK NAMEGOT run random value 1..10
 
 execute if score ATTACK NAMEGOT matches 1 run scoreboard players set NAMEGOT NAMEGOT 2
 execute if score ATTACK NAMEGOT matches 2 run scoreboard players set NAMEGOT NAMEGOT 3

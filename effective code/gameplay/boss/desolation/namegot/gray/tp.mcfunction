@@ -3,10 +3,11 @@
 # Process the TP of Namegot                                    #
 #                                                              #
 ################################################################
-summon area_effect_cloud ~ ~ ~ {Tags:["random_postp"]}
-execute store result score POSTP NAMEGOT run data get entity @e[type=area_effect_cloud,tag=random_postp,limit=1] UUID[0] 1
-scoreboard players operation POSTP NAMEGOT %= MAXPOSTP NAMEGOT
-kill @e[type=area_effect_cloud,tag=random_postp]
+#summon area_effect_cloud ~ ~ ~ {Tags:["random_postp"]}
+#execute store result score POSTP NAMEGOT run data get entity @e[type=area_effect_cloud,tag=random_postp,limit=1] UUID[0] 1
+#scoreboard players operation POSTP NAMEGOT %= MAXPOSTP NAMEGOT
+#kill @e[type=area_effect_cloud,tag=random_postp]
+execute store result score POSTTP NAMEGOT run random value 0..25
 
 playsound entity.enderman.teleport hostile @a ~ ~ ~ 1 0.1 1
 execute if score POSTP NAMEGOT matches 0 run tp @e[type=wither_skeleton,tag=NAMEGOT] 469 23 -35
