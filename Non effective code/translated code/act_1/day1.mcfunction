@@ -2,7 +2,7 @@
 tellraw @a {"text":"Voici votre première livraison! Veuillez livrer ce vêtement au magasin 'Noufnouf' à la gare!","color":"gray"}
 
 #Quand le joueur sort du batiment :
-playsound records.cat music @a -220 85 257 15.0 1.0 1.0
+playsound music_disc.cat music @a -220 85 257 15.0 1.0 1.0
 
 #Quand le joueur donne le t-shirt
 tellraw @a {"text":"Mission termine! Bravo vous recevez 5 DOLLAR$! Vous entendez une porte s'ouvrir au fond du magasin, jetez y un oeil!","color":"blue"}

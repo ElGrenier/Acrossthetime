@@ -1,7 +1,7 @@
 #Entrance
 execute if entity @a[x=-121,y=90,z=-1625,distance=..15,gamemode=adventure]
 tellraw @a {"text":"Bon si je me souviens bien pour entrer dans le donjon il faut que j'active les interrupteurs des 2 guardiens en tirant dans leur bouche crachant du feu! Puis, je dois activer 3 autres interrupteurs accrochés sur la falaise, uniquement la : roue de Diamant, de Lapis et d'Emeraude!","color":"aqua"}
-playsound records.chirp music @a -128 79 -1606 10.0 1.0 1.0
+playsound music_disc.chirp music @a -128 79 -1606 10.0 1.0 1.0
 
 #Left Fire Shot
 setblock -133 80 -1601 air
@@ -20,8 +20,8 @@ summon zombie ~ ~8 ~ {PersistenceRequired:1b,AbsorptionAmount:10,IsBaby:1b,DropC
 # When Emerald, Diamond and Lapis lever are pulled
 tellraw @a {"text":"Une ouverture s'est créée dans la roue du Lapis Lazuli!","italic":true,"color":"gray"}
 summon zombified_piglin -122 101 -1655 {PersistenceRequired:1,attributes:[{Name:max_health,Base:100,HealF:0.5},{Name:attack_damage,Base:3.0}],DropChances:[0.001f,0.0f,0.0f,0.002f,0.0f],Equipment:[{id:279,Count:1,tag:{ench:[{id:16,lvl:10},{id:34,lvl:5}],display:{Name:"IMMORTAL KING'S DIAMOND CRUSHER",Lore:["Legendary Axe!","Immortal King's Set!"]}}},{id:301,Count:1,tag:{display:{color:170170170}}},{id:300,Count:1,tag:{display:{color:170170170}}},{id:311,Count:1,tag:{ench:[{id:0,lvl:6},{id:7,lvl:4},{id:34,lvl:10}],display:{Name:"IMMORTAL KING'S SOUL CAGE",Lore:["Legendary Chestplate!","Immortal King's Set!"]}}},{id:298,Count:1,tag:{display:{color:170170170}}}]}
-playsound random.orb master @a
-playsound random.levelup master @a
+playsound entity.experience_orb.pickup master @a
+playsound entity.player.levelup master @a
 summon zombie -67 91 -1663 {PersistenceRequired:1b,attributes:[{Name:max_health,Base:40,HealF:0.5},{Name:attack_damage,Base:2.0}],IsBaby:1b,DropChances:[0.09f,0.07f,0.08f,0.0f,0.09f],Equipment:[{id:276,Count:1},{id:309,Count:1,tag:{ench:[{id:0,lvl:2},{id:2,lvl:2},{id:34,lvl:4}],display:{Name:"WATERWALK",Lore:["Legendary Boots!"]}}},{id:303,Count:1,tag:{ench:[{id:0,lvl:2},{id:1,lvl:4},{id:34,lvl:5}],display:{Name:"MAVINA'S EMBRACE",Lore:["Legendary Chestplate!","Mavina's Set!"]}}},{id:299,Count:1,tag:{display:{color:170170170}}},{id:306,Count:1,tag:{ench:[{id:0,lvl:4},{id:34,lvl:4}],display:{Name:"GAZE",Lore:["Legendary Helm!"]}}}]}
 summon zombie -67 91 -1663 {PersistenceRequired:1b,attributes:[{Name:max_health,Base:40,HealF:0.5},{Name:attack_damage,Base:2.0}],IsBaby:1b,DropChances:[0.09f,0.07f,0.08f,0.0f,0.09f],Equipment:[{id:276,Count:1},{id:309,Count:1,tag:{ench:[{id:0,lvl:2},{id:2,lvl:2},{id:34,lvl:4}],display:{Name:"WATERWALK",Lore:["Legendary Boots!"]}}},{id:303,Count:1,tag:{ench:[{id:0,lvl:2},{id:1,lvl:4},{id:34,lvl:5}],display:{Name:"MAVINA'S EMBRACE",Lore:["Legendary Chestplate!","Mavina's Set!"]}}},{id:299,Count:1,tag:{display:{color:170170170}}},{id:306,Count:1,tag:{ench:[{id:0,lvl:4},{id:34,lvl:4}],display:{Name:"GAZE",Lore:["Legendary Helm!"]}}}]}
 summon zombie -106 91 -1676 {PersistenceRequired:1b,attributes:[{Name:max_health,Base:40,HealF:0.5},{Name:attack_damage,Base:2.0}],IsBaby:1b,DropChances:[0.09f,0.07f,0.08f,0.0f,0.09f],Equipment:[{id:267,Count:1},{id:309,Count:1,tag:{ench:[{id:0,lvl:2},{id:2,lvl:2},{id:34,lvl:4}],display:{Name:"WATERWALK",Lore:["Legendary Boots!"]}}},{id:303,Count:1,tag:{ench:[{id:0,lvl:2},{id:1,lvl:4},{id:34,lvl:5}],display:{Name:"MAVINA'S EMBRACE",Lore:["Legendary Chestplate!","Mavina's Set!"]}}},{id:299,Count:1,tag:{display:{color:170170170}}},{id:306,Count:1,tag:{ench:[{id:0,lvl:4},{id:34,lvl:4}],display:{Name:"GAZE",Lore:["Legendary Helm!"]}}}]}
@@ -57,7 +57,7 @@ summon skeleton -123 94 -1671 {PersistenceRequired:1b,attributes:[{Name:max_heal
 summon skeleton -122 94 -1676 {PersistenceRequired:1b,attributes:[{Name:max_health,Base:50,HealF:0.5},{Name:attack_damage,Base:5.0}],DropChances:[0.03f,0.0f,0.0f,0.0f,0.0f],Equipment:[{id:261,Count:1,tag:{ench:[{id:34,lvl:2},{id:48,lvl:4}],display:{Name:"CONFERENCE CALL",Lore:["Legendary Bow!"]}}},{id:301,Count:1,tag:{display:{color:170170170}}},{id:300,Count:1,tag:{display:{color:170170170}}},{id:299,Count:1,tag:{display:{color:170170170}}},{id:298,Count:1,tag:{display:{color:170170170}}}]}
 summon skeleton -122 94 -1676 {PersistenceRequired:1b,attributes:[{Name:max_health,Base:50,HealF:0.5},{Name:attack_damage,Base:5.0}],DropChances:[0.03f,0.0f,0.0f,0.0f,0.0f],Equipment:[{id:261,Count:1,tag:{ench:[{id:34,lvl:2},{id:48,lvl:4}],display:{Name:"CONFERENCE CALL",Lore:["Legendary Bow!"]}}},{id:301,Count:1,tag:{display:{color:170170170}}},{id:300,Count:1,tag:{display:{color:170170170}}},{id:299,Count:1,tag:{display:{color:170170170}}},{id:298,Count:1,tag:{display:{color:170170170}}}]}
 summon slime -123 89 -1673 {PersistenceRequired:1b,Size:5,CustomName:'"Blobby"',CustomNameVisible:1b,DropChances:[0.0f,0.0f,0.0f,0.5f,0.5f],Equipment:[{id:276,Count:1,tag:{ench:[{id:16,lvl:5}],display:{Name:"THE GRANDFATHER",Lore:["Legendary Sword Unbreakable!"]}}},{id:306,Count:1,tag:{ench:[{id:0,lvl:2},{id:34,lvl:4}],Unbreakable:1,display:{Name:"GAZE",Lore:["Legendary Helm!"]}}},{id:303,Count:1,tag:{ench:[{id:34,lvl:3},{id:0,lvl:8}],display:{Name:"SHAM",Lore:["Legendary Chestplate!"]}}},{id:378,Count:1,tag:{display:{Name:"ECAILLE SOUVERAINE DU CHAOS",Lore:["Précieux!!","Très, TRES précieux........"]}}},{id:378,Count:1,tag:{display:{Name:"ECAILLE SOUVERAINE DU CHAOS",Lore:["Précieux!!","Très, TRES précieux........"]}}}]}
-playsound random.orb master @a
+playsound entity.experience_orb.pickup master @a
 
 #Iron Mechanism 3
 tp @p -126 88 -1659
@@ -77,7 +77,7 @@ summon creeper -100 55 -1693 {PersistenceRequired:1b}
 
 
 #All key placed
-playsound portal.travel master @a
+playsound block.portal.travel master @a
 tellraw @a {"text":"VOUS NE M'EMPECHEREZ JAMAIS DE GRANDIR!!!! L'ELEVATION VERS LES CIEUX EST MON DESTIN!!!","bold":true,"color":"red"}
 tellraw @a {"text":"La porte de la grande Pyramide s'est ouverte au sommet!","italic":true,"color":"gray"}
 summon skeleton -107 64 -1830 {PersistenceRequired:1b,attributes:[{Name:max_health,Base:50,HealF:0.5},{Name:attack_damage,Base:5.0}],DropChances:[0.03f,0.0f,0.0f,0.0f,0.0f],Equipment:[{id:261,Count:1,tag:{ench:[{id:34,lvl:2},{id:48,lvl:4}],display:{Name:"CONFERENCE CALL",Lore:["Legendary Bow!"]}}},{id:301,Count:1,tag:{display:{color:170170170}}},{id:300,Count:1,tag:{display:{color:170170170}}},{id:299,Count:1,tag:{display:{color:170170170}}},{id:298,Count:1,tag:{display:{color:170170170}}}]}

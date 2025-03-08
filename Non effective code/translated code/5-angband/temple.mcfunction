@@ -5,9 +5,9 @@ setblock -41 48 -287 air
 function att:checkpoint/angband1
 
 #kill guard
-playsound random.levelup master @a
-playsound portal.trigger master @a
-playsound portal.travel master @a
+playsound entity.player.levelup master @a
+playsound block.portal.trigger master @a
+playsound block.portal.travel master @a
 #délai
 tellraw @a {"text":"QUI OSE PENETRER DANS MA DEMEURE??? Gardes, tuez tout ceux qui oseront fouler ce sanctuaire!... . . .","color":"dark_red","bold":true}
 summon zombified_piglin -87 47 -275 {Anger:1,PersistenceRequired:1,attributes:[{Name:max_health,Base:20,HealF:0.5},{Name:attack_damage,Base:2.0},{Name:follow_range,Base:50.0}],DropChances:[0.05f,0.08f,0.0f,0.0f,0.0f],Equipment:[{id:275,Count:1},{id:301,Count:1,tag:{ench:[{id:0,lvl:2},{id:1,lvl:1},{id:34,lvl:5}],display:{Name:"HOTSPUR",Lore:["Legendary Boots!"],color:130100255}}},{id:300,Count:1,tag:{display:{color:130100255}}},{id:299,Count:1,tag:{display:{color:130100255}}},{}]}
@@ -57,7 +57,7 @@ summon zombified_piglin -87 47 -275 {Anger:1,PersistenceRequired:1,attributes:[{
 summon zombified_piglin -87 47 -275 {Anger:1,PersistenceRequired:1,attributes:[{Name:max_health,Base:20,HealF:0.5},{Name:attack_damage,Base:2.0},{Name:follow_range,Base:50.0}],DropChances:[0.05f,0.08f,0.0f,0.0f,0.0f],Equipment:[{id:275,Count:1},{id:301,Count:1,tag:{ench:[{id:0,lvl:2},{id:1,lvl:1},{id:34,lvl:5}],display:{Name:"HOTSPUR",Lore:["Legendary Boots!"],color:130100255}}},{id:300,Count:1,tag:{display:{color:130100255}}},{id:299,Count:1,tag:{display:{color:130100255}}},{}]}
 summon zombified_piglin -87 47 -275 {Anger:1,PersistenceRequired:1,attributes:[{Name:max_health,Base:20,HealF:0.5},{Name:attack_damage,Base:2.0},{Name:follow_range,Base:50.0}],DropChances:[0.05f,0.08f,0.0f,0.0f,0.0f],Equipment:[{id:275,Count:1},{id:301,Count:1,tag:{ench:[{id:0,lvl:2},{id:1,lvl:1},{id:34,lvl:5}],display:{Name:"HOTSPUR",Lore:["Legendary Boots!"],color:130100255}}},{id:300,Count:1,tag:{display:{color:130100255}}},{id:299,Count:1,tag:{display:{color:130100255}}},{}]}
 summon zombified_piglin -87 47 -275 {Anger:1,PersistenceRequired:1,attributes:[{Name:max_health,Base:20,HealF:0.5},{Name:attack_damage,Base:2.0},{Name:follow_range,Base:50.0}],DropChances:[0.05f,0.08f,0.0f,0.0f,0.0f],Equipment:[{id:275,Count:1},{id:301,Count:1,tag:{ench:[{id:0,lvl:2},{id:1,lvl:1},{id:34,lvl:5}],display:{Name:"HOTSPUR",Lore:["Legendary Boots!"],color:130100255}}},{id:300,Count:1,tag:{display:{color:130100255}}},{id:299,Count:1,tag:{display:{color:130100255}}},{}]}
-playsound records.blocks master @a -86 48 -185 8.0 1.0 1.0
+playsound music_disc.blocks master @a -86 48 -185 8.0 1.0 1.0
 
 #head info
 tellraw @a {"text":"Il y a une inscription ici : 'Ceci est la tête de la flamme noire, antique démon destructeur du Royaume d'Angband... Un canon a été installé à l'interieur, en guise de dissuasion'","color":"aqua"}
@@ -78,7 +78,7 @@ tp @p -57 66 -213
 effect give @p fire_resistance 1
 
 #petite porte
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 
 #teleport puzzle enter
 execute if entity @a[x=-115,y=40,z=-340,distance=..5,gamemode=adventure]
@@ -139,7 +139,7 @@ tellraw @a {"text":"Une inscription est notée ici : 'Voici le dernier 'héro' n
 tp @p[x=-91,y=39,z=-357,distance=..2] -104 41 -352
 
 #door lock
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 
 #info couloir
 tellraw @a {"text":"Il y a une inscription sur cette plaque : Quartier des maîtres... Aucune âme ne sera admise dans l'enceinte, à part les loyaux sujets et les esclaves du roi-dieu Azazel.","color":"aqua"}
@@ -150,7 +150,7 @@ tellraw @a {"text":"Mince l'épée a sûrement du être dérobée...","color":"a
 #bedroom Chest(unused button?)
 tellraw @a {"text":"20 Chronotons!","italic":true,"color":"gray"}
 scoreboard players add @a Chronoton 20
-playsound random.orb master @a
+playsound entity.experience_orb.pickup master @a
 
 #painting info
 tellraw @a {"text":"Ce tableau décrit le combat de deux immortels : Namégot et Ranwë","color":"aqua"}
@@ -158,7 +158,7 @@ tellraw @a {"text":"Ce tableau décrit le combat de deux immortels : Namégot et
 #info petite lock
 tellraw @a {"text":"Attention! Zone dangereuse, les seules personnes autorisées sont détentrice de la petite clef...","italic":true,"color":"gray"}
 #open door
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 #info escalier (once?)
 tellraw @a {"text":"Il est écrit : Ce labo est à la pointe de la magie et de la technologie, prière de ne rien toucher sous peine de décapitation soudaine... ET SURTOUT silence!","color":"aqua"}
 
@@ -216,23 +216,23 @@ tellraw @a {"text":"Bureau de Hector. Chef de la recherche et intendant du trôn
 setblock -46 39 -355 air
 tellraw @a {"text":"Les escaliers sont bloqués... Un son étrange provient de l'étage en dessous, nous devons aller voir dans le labo, les clef doivent se trouver là-bas!","color":"aqua"}
 #unlock
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 
 #button throne
 tellraw @a {"text":"Ce bouton me semble inutile pour le moment.","color":"aqua"}
 #once active boss
-#????????????????????????? Traduction unsure
+
 tp @a[x=-87,y=64,z=-291,distance=..5] -88 67 -331
 
 #lamp levers door
-playsound random.orb master @a
+playsound entity.experience_orb.pickup master @a
 
 #unlock prison exit
 tellraw @a {"text":"Suivez la ligne verte miserable insecte!","italic":true,"color":"dark_red"}
-playsound random.orb master @a
+playsound entity.experience_orb.pickup master @a
 
 #cells door
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 
 #leviers chaise
 tellraw @a {"text":"Champs électriques activés!","color":"gray","italic":true}
@@ -255,7 +255,7 @@ tellraw @a {"text":"La mort vous attend... !:;!;:;%;'&!;!;(!';:(;!%;(:)/./.:!;!;
 
 #clé door
 tellraw @a {"text":"Hihihihihi! Tu es bien sot de croire que tu pourras passer! /<\\>/ Nous les spectres des 4 éléments nous pouvons lire dans tes pensées! /<\\>/ Jamais tu n'obtiendras La Gemme De La Haine! /<\\>//","bold":true,"color":"red"}
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 fill 72 49 -269 72 47 -276 nether_brick_fence replace air
 playsound mob.zombie.woodbreak master @a
 
@@ -264,24 +264,24 @@ tellraw @a {"text":"Passerelle activé!","italic":true,"color":"gray"}
 #chest
 summon ghast 83 55 -275 {ExplosionPower:3,PersistenceRequired:1b,attributes:[{Name:max_health,Base:120,HealF:0.5},{Name:attack_damage,Base:3.0}]}
 #lock
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 
 #water chest
 setblock 84 57 -306 redstone_block
 summon ghast 83 55 -275 {ExplosionPower:3,PersistenceRequired:1b,attributes:[{Name:max_health,Base:120,HealF:0.5},{Name:attack_damage,Base:3.0}]}
 #lock
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 
 #air chest
 summon ghast 83 55 -275 {ExplosionPower:3,PersistenceRequired:1b,attributes:[{Name:max_health,Base:120,HealF:0.5},{Name:attack_damage,Base:3.0}]}
 #lock
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 
 #earth chest
 setblock 103 61 -219 redstone_block
 summon ghast 83 55 -275 {ExplosionPower:3,PersistenceRequired:1b,attributes:[{Name:max_health,Base:120,HealF:0.5},{Name:attack_damage,Base:3.0}]}
 #lock
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 
 #all locks(move to boss?)
 tellraw @a {"text":"Vous ne me vaincrez jamais! Cette source m'appartient!","bold":true,"color":"red"}
@@ -291,14 +291,14 @@ title @a subtitle {"text":"L'usuparteur... Le déchu.","color":"dark_gray"}
 #delay
 tellraw @a {"text":"Venez découvrir la quintessence de ma fureur, pathétique mortel!","bold":true,"color":"red"}
 fill 108 57 -275 108 51 -270 barrier replace quartz_ore
-playsound records.blocks music @a 128 54 -273 2.0 1.0 1.0
+playsound music_disc.blocks music @a 128 54 -273 2.0 1.0 1.0
 
 #button post boss
 tellraw @a {"text":"Derrière cette porte se trouve l'unique source de magie infinie de tous les royaumes, et ainsi l'objet de vos désirs. En passant cette porte vous ne pourrez plus faire demi-tour, car le mal l'emportera sur votre ténacité.","italic":true,"color":"gray"}
 tellraw @a {"text":"Le choix vous appartient : En cliquant une seconde fois sur ce bouton, vous accéderez à une force divine et perdrez petit à petit votre humanité voir votre âme... Sinon vous pouvez repartir mais le destin de votre monde sera alors scellé.","italic":true,"color":"gray"}
 
 #push again
-playsound records.mall music @a 185 50 -272 3.0 1.0 1.0
+playsound music_disc.mall music @a 185 50 -272 3.0 1.0 1.0
 tp @e[type=snow_golem,x=149,y=45,z=-245,dx=-50,dy=20,dz=-50] 150 0 -245
 tp @e[type=iron_golem,x=149,y=45,z=-245,dx=-50,dy=20,dz=-50] 150 0 -245
 tp @e[type=wolf,x=149,y=45,z=-245,dx=-50,dy=20,dz=-50] 150 0 -245

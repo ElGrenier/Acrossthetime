@@ -19,7 +19,7 @@ setblock 170 63 -972 air
 
 #complete ink
 scoreboard players add @a Chronoton 20
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 tellraw @a {"text":"-°- Cain Deckard : ","bold":true,"color":"dark_gray","extra":[{"text":"Oh merci beaucoup c'est très gentil à vous! Je vais enfin pouvoir finir mes mémoires, tenez voilà ce que je peux vous offrir!","italic":true,"color":"dark_aqua","bold":false}]}
 #délai
 tellraw @a {"text":"-°- Cain Deckard : ","bold":true,"color":"dark_gray","extra":[{"text":"Et sachez que dans cette contrée se trouve une grande sculpture très ancienne construite par les anciens bâtisseurs venant des étoiles. Nous l'avons nommée le Lion des sables et d'après la légende, il est écrit qu'il renferme les cendres d'un grand empereur! Seul un grand archer serait capable d'y entrer, mais pour cela il vous faudra obtenir un arc! 'Vise le troisième œil de la vérité et un pas sage te sera révélé!'","italic":true,"color":"dark_aqua","bold":false}]}

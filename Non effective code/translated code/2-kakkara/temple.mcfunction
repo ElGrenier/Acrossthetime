@@ -8,12 +8,12 @@ tellraw @a {"text":"Sas ouvert!","italic":true,"color":"gray"}
 
 #open camp
 tellraw @a {"text":"Accès exterieur aux ramparts déverrouillé!","italic":true,"color":"gray"}
-playsound records.far music @a 277 65 -950 20.0 1.0 1.0
+playsound music_disc.far music @a 277 65 -950 20.0 1.0 1.0
 fill 264 68 -890 264 65 -891 ladder[facing=west]
 fill 253 68 -891 253 65 -890 ladder[facing=east]
 
 #open grand lock
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 
 #prendre gemme
 tellraw @a {"text":"Bravo, vous avez la gemme du Courage! Vous pouvez maintenant rentrer et mettre la gemme au temple! Une porte s'est ouverte ici afin de prendre un raccourci!","italic":true,"color":"gray"}

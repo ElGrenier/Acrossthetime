@@ -3,20 +3,20 @@ effect give @p[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0] slowness 2 20 true
 
 execute if entity @p[level=15..,x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=0}]
     scoreboard players set @p[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=0}] VITA 1
-    playsound random.levelup master @a[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=0}] ~ ~ ~ 1 0.1 1
+    playsound entity.player.levelup master @a[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=0}] ~ ~ ~ 1 0.1 1
     xp add @p[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=0}] -15 levels
     tellraw @p[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=0}] {"text":"Vitesse d'attaque Niveau 1 Acquis!","color":"gray","italic":true}
 
 
 execute if entity @p[level=25..,x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=1}]
     scoreboard players set @p[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=1}] VITA 2
-    playsound random.levelup master @a[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=1}] ~ ~ ~ 1 0.1 1
+    playsound entity.player.levelup master @a[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=1}] ~ ~ ~ 1 0.1 1
     xp add @p[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=1}] -25 levels
     tellraw @p[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=1}] {"text":"Vitesse d'attaque Niveau 2 Acquis!","color":"gray","italic":true}
 
 execute if entity @p[level=35..,x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=2}]
 scoreboard players set @p[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=2}] VITA 3
-playsound random.levelup master @a[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=2}] ~ ~ ~ 1 0.1 1
+playsound entity.player.levelup master @a[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=2}] ~ ~ ~ 1 0.1 1
 xp add @p[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=2}] -35 levels
 tellraw @p[x=-236,y=73,z=-1258,dx=-2,dy=1,dz=0,scores={VITA=2}] {"text":"Vitesse d'attaque Niveau 3 Acquis!","color":"gray","italic":true}
 

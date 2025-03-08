@@ -6,7 +6,7 @@ scoreboard players add @p Chronoton 60
 tellraw @a {"text":"Vous obtenez 60 chronotons!","color":"gray"}
 
 #clé sanctuaire open
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 
 #tp avant gemme
 tellraw @a {"text":"Prenez d'abord la Gemme!","italic":true,"color":"gray"}

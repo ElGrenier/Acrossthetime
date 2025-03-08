@@ -4,7 +4,7 @@ tellraw @a {"text":"-°- Gros Otaurien : ","bold":true,"color":"dark_gray","extr
 
 # place feuille
 setblock -288 127 -1427 air
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 
 # reparle après
 tellraw @a {"text":"-°- Gros Otaurien : ","bold":true,"color":"dark_gray","extra":[{"text":"Merci à toi! Je parlerais de toi à tout le monde!","color":"dark_aqua","bold":false}]}

@@ -6,7 +6,7 @@ tellraw @a {"text":" -°- Voix désincarnée : ","color":"gray","bold":true,"ext
 
 #Contexte : Le joueur sort de son batiment 
 tellraw @a {"text":" -°- Voix désincarnée : ","color":"gray","bold":true,"extra":[{"text":"Attention! De nombreux monstres ont envahi les rues, frayez vous un chemin jusqu'au pont à coté de la gare en évitant de vous faire tuer...","color":"blue","bold":false}]}
-playsound records.strad music @a -360 90 730 20.0 1.0 1.0
+playsound music_disc.strad music @a -360 90 730 20.0 1.0 1.0
 
 
 #Boucle (Info cool : "m" = Gamemode donc si dans un testfor m=2 c'est que le gamemode est en aventure)
@@ -28,7 +28,7 @@ setblock -378 89 837 redstone_block
 
 tellraw @a {"text":" -°- Voix désincarnée : ","color":"gray","bold":true,"extra":[{"text":"Courrez!!!!! Il y a une brèche dans le bâtiment, vous pouvez monter à l'étage suivant par là-bas!","color":"blue","bold":false}]}
 #Plusieurs fois ce commande block (A reprendre)
-summon zombie -379 96 837 {PermanenceRequired:1} 
+summon zombie -379 96 837 {PersistenceRequired:1b} 
 
 ## Faire apparaitre des Zombies
 
@@ -44,7 +44,7 @@ tellraw @a {"text":" -°- Voix désincarnée : ","color":"gray","bold":true,"ext
 #Ne se lance qu'une fois
 execute if entity @a[x=-385,y=117,z=824,distance=..6,gamemode=adventure]
 
-playsound random.orb master @a
+playsound entity.experience_orb.pickup master @a
 tellraw @a {"text":"Vite, sautez par la fissure du bâtiment dans le vide!","color":"blue"}
 
 #après 2s faire apparaitre BEAUCOUP de Zombie
@@ -72,7 +72,7 @@ tp @a -775 250 -1247
 
 #Dans le trou très long 
 effect give @a night_vision 1
-playsound portal.trigger master @a
+playsound block.portal.trigger master @a
 
 #A la fin du trou
 tp @a -785 4 -1239

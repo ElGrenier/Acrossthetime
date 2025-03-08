@@ -112,7 +112,7 @@ tellraw @a {"text":"Enclenchez les pièges!!!","bold":true,"color":"red"}
 
 #Quand tout les points ont été tiré
 tellraw @a {"text":"Le crane du golem s'est ouvert! Il faut que je grimpe aux lianes afin d'atteindre cette passerelle et lui donner un coup fatal!","color":"aqua"}
-playsound tile.piston.in master @a
+playsound block.piston.contract master @a
 setblock -122 82 -1829 chiseled_stone_bricks
 setblock -121 82 -1829 chiseled_stone_bricks
 fill -123 62 -1827 -123 87 -1828 iron_block

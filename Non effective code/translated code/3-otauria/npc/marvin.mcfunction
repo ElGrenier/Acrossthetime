@@ -4,7 +4,7 @@ tellraw @a {"text":"-°- Marvin : ","bold":true,"color":"dark_gray","extra":[{"t
 tellraw @a {"text":"-°- Marvin : ","bold":true,"color":"dark_gray","extra":[{"text":"Apporte moi du poisson (raw fish), j'en raffole mais je ne peux pas m'en payer!","color":"dark_aqua","bold":false}]}
 
 #donner poisson
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 tellraw @a {"text":"-°- Marvin : ","bold":true,"color":"dark_gray","extra":[{"text":"Reviens plus tard j'aurais quelque chose pour toi!","color":"dark_aqua","bold":false}]}
 
 #après avoir trigger le demi boss temple 3

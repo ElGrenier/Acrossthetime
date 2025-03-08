@@ -1,13 +1,13 @@
 
 #leviers petite clef étage 0
-summon slime -366 93 -1406 {PersistenceRequired:1b,Size:2,attributes:[{Name:max_health,Base:60,HealF:0.5},{Name:attack_damage,Base:2.0}]}
-summon slime -366 93 -1406 {PersistenceRequired:1b,Size:2,attributes:[{Name:max_health,Base:60,HealF:0.5},{Name:attack_damage,Base:2.0}]}
-summon slime -366 93 -1406 {PersistenceRequired:1b,Size:3,attributes:[{Name:max_health,Base:60,HealF:0.5},{Name:attack_damage,Base:2.0}]}
-summon slime -366 93 -1406 {PersistenceRequired:1b,Size:2,attributes:[{Name:max_health,Base:60,HealF:0.5},{Name:attack_damage,Base:2.0}]}
+summon slime -366 93 -1406 {PersistenceRequired:1b,Size:2,attributes:[{id:max_health,base:60},{id:attack_damage,base:2.0}]}
+summon slime -366 93 -1406 {PersistenceRequired:1b,Size:2,attributes:[{id:max_health,base:60},{id:attack_damage,base:2.0}]}
+summon slime -366 93 -1406 {PersistenceRequired:1b,Size:3,attributes:[{id:max_health,base:60},{id:attack_damage,base:2.0}]}
+summon slime -366 93 -1406 {PersistenceRequired:1b,Size:2,attributes:[{id:max_health,base:60},{id:attack_damage,base:2.0}]}
 
 #petite porte étage 0
-playsound records.ward music @a -396 90 -1428 12.0 1.0 1.0
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound music_disc.ward music @a -396 90 -1428 12.0 1.0 1.0
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 
 #info porte bronze (les indices sont claqués au sol, il faut refaire le puzzle)
 tellraw @a {"text":"Il te faut 3 clefs pour ouvrir cette porte : Toutes les clefs se trouvent dans les coffres juste au dessus de cette salle. La première se trouve à mi-chemin entre le bloc rouge et le bloc vert.","color":"gray","italic":true}
@@ -15,7 +15,7 @@ tellraw @a {"text":"La seconde se trouve à environ 6 blocs du bloc noir et à 4
 tellraw @a {"text":"La dernière se trouve dans le coffre éloigné de la même distance que celle qui sépare le bloc rouge et jaune en partant du vert, et à proximité du bleu!","italic":true,"color":"gray"}
 
 #porte bronze
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 setblock -427 107 -1458 air
 
 #torkant demi boss (from demi boss detection)
@@ -25,10 +25,10 @@ tellraw @a {"text":" QUI OSE PENETRER DANS MON ANTRE?... VOUS NE SORTIREZ JAMAIS
 tellraw @a {"text":" ... AUCUN HUMAIN NE PEUT RESPIRER SOUS L'EAU...","bold":true,"color":"red"}
 
 #4 levers laby
-summon slime -386 93 -1428 {PersistenceRequired:1b,Size:2,attributes:[{Name:max_health,Base:60,HealF:0.5},{Name:attack_damage,Base:2.0}]}
-summon guardian -386 93 -1428 {PersistenceRequired:1b,attributes:[{Name:max_health,Base:60,HealF:0.5},{Name:attack_damage,Base:2.0}]}
-summon slime -386 93 -1428 {PersistenceRequired:1b,Size:2,attributes:[{Name:max_health,Base:60,HealF:0.5},{Name:attack_damage,Base:2.0}]}
-summon slime -386 93 -1428 {PersistenceRequired:1b,Size:2,attributes:[{Name:max_health,Base:60,HealF:0.5},{Name:attack_damage,Base:2.0}]}
+summon slime -386 93 -1428 {PersistenceRequired:1b,Size:2,attributes:[{id:max_health,base:60},{id:attack_damage,base:2.0}]}
+summon guardian -386 93 -1428 {PersistenceRequired:1b,attributes:[{id:max_health,base:60},{id:attack_damage,base:2.0}]}
+summon slime -386 93 -1428 {PersistenceRequired:1b,Size:2,attributes:[{id:max_health,base:60},{id:attack_damage,base:2.0}]}
+summon slime -386 93 -1428 {PersistenceRequired:1b,Size:2,attributes:[{id:max_health,base:60},{id:attack_damage,base:2.0}]}
 
 tellraw @a {"text":"Une porte s'est ouverte dans la salle principale...","italic":true,"color":"gray"}
 setblock -357 80 -1417 redstone_block
@@ -47,7 +47,7 @@ setblock -288 80 -1418 air
 tellraw @a {"text":"Le chemin s'est dévoilé...","italic":true,"color":"gray"}
 
 #open great door (2)
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 
 #obtain clé repos cassée
 tellraw @a {"text":"C'est la clef du repos! Elle devrait permettre d'ouvrir la porte sous la salle principale! Mais elle semble très abimée et lourde, très lourde, comme si elle s'était vidée de son énergie...","color":"aqua"}
@@ -65,7 +65,7 @@ fill -515 9 -1398 -515 3 -1405 redstone_block replace air
 
 #place clé repos cassée
 tellraw @a {"text":"La clef a été rechargée... Mais on entend comme un grondement venant de la salle principale...","italic":true,"color":"gray"}
-playsound random.levelup master @a ~ ~ ~ 1 2 1
+playsound entity.player.levelup master @a ~ ~ ~ 1 2 1
 setblock -382 61 -1412 redstone_wire
 #délai
 tellraw @a {"text":"Je devrais aller voir dans la salle centrale, au fond, pour trouver un endroit où mettre la clef du repos rechargée","color":"aqua"}
