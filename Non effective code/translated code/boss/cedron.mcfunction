@@ -18,7 +18,7 @@ execute if entity @e[type=silverfish,x=145,y=65,z=-1345,dx=25,dy=-15,dz=-25]
     summon XPOrb 158 65 -1355 {Value:5}
 
     summon XPOrb 158 65 -1355 {Value:5}
-    playsound note.pling @a ~ ~ ~ 1 2 1
+    playsound note.pling master @a ~ ~ ~ 1 2 1
     summon XPOrb 158 65 -1355 {Value:5}
 
     #Ouvrir la porte du boss une fois que l'ame est déposée

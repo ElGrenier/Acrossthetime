@@ -6,9 +6,9 @@ tellraw @a {"text":"-°- Calypso : ","bold":true,"color":"dark_gray","extra":[{"
 ##QQ seconde plus tard
 tellraw @a {"text":"-°- Calypso : ","bold":true,"color":"dark_gray","extra":[{"text":"Le livre se trouve dans le coffre derrière moi. Attention vous serez limité en recharge et cela vous coûtera une très faible somme d'argent. Pour en récupérer placez-vous sur le diamant et appuyez sur le bouton!","color":"dark_aqua","bold":false}]}
 scoreboard players add @a PARLER 1
-setblock -330 96 -1291 air 
+setblock -330 96 -1291 air
 #A changer
-setblock -331 96 -1290 redstone_wire 
+setblock -331 96 -1290 redstone_wire
 #A changer
 
 #Une fois la premiere discussion faite 

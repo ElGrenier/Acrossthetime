@@ -1,0 +1,4 @@
+tellraw @a {"text":"-°- Intendant : ","bold":true,"color":"dark_gray","extra":[{"text":"Venez, entrez étranger, nous ne sommes pas de vulgaires zombies! Vous êtes le bienvenu à l'Oasis de Sirocco! Ici il fait bon vivre mais depuis la corruption nous avons perdu des villageois! Je suis l'intendant du village, et si vous êtes de bon cœur un de nos villageois à besoin d'aide, allez lui parler dans sa maison! Faites cependant très attention si vous décidez d'entrer directement dans le donjon du courage, il va vous en falloir car les monstres on de terribles armes à distance!","italic":true,"color":"dark_aqua","bold":false}]}
+
+#reparler
+tellraw @a {"text":"-°- Intendant : ","bold":true,"color":"dark_gray","extra":[{"text":"Faites-vite, allez récupérer la gemme du courage! Si tu ne l'as pas fait, tu peux aider notre ami Cain Deckard!","italic":true,"color":"dark_aqua","bold":false}]}

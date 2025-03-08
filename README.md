@@ -9,10 +9,7 @@ The "Non effective code" contain two folders :
 
 # Here are some usefull link for translating the code :
 
-Particle id - Sounds Event - Blocks States - Painting Motifs - Stats - NBT data - Commands :
-https://minecraft.wiki/w/Java_Edition_1.13/Flattening
-
-Item id : 
+Particle id - Sounds Event - Blocks States - Painting Motifs - Stats - NBT data - Commands - and almost every pre-flattening information:
 https://minecraft.wiki/w/Java_Edition_pre-flattening_data_values#Block_IDs
 
 Potion effects id :
