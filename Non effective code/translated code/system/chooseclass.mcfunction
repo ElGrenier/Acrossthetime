@@ -20,7 +20,7 @@ setblock -6 80 67 redstone_wire
 
 ########## Guerrier
 tellraw @p[x=-731,y=83,z=-1094,distance=..2] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - (GUERRIER : 2 COEURS D'ABSORPTION DE PLUS A VIE). Vous pouvez appuyer sur l'interrupteur, mais assurez-vous d'être seul dans le sas!","color":"gray","bold":false,"italic":true}]}
-playsound random.orb master @p[x=-731,y=83,z=-1094,distance=..2]
+playsound entity.experience_orb.pickup master @p[x=-731,y=83,z=-1094,distance=..2]
 
 #Quand le joueur clique sur le bouton 
 tellraw @p[x=-731,y=83,z=-1095,distance=1..5] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - Placez-vous d'abord sur la plaque de pression, puis appuyez sur l'interrupteur en face si vous avez choisi votre classe!","color":"gray","bold":false,"italic":true}]}
@@ -41,7 +41,7 @@ execute if entity @p[x=-731,y=83,z=-1094,distance=..1]
 
 ########## Sorcier
 tellraw @p[x=-731,y=83,z=-1112,distance=..2] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - (SORCIER : SORT INFERNO + REGAIN DE 3 DAHAL TOUTE LES 30 SECONDES) Vous pouvez appuyer sur l'interrupteur, mais assurez-vous d'être seul dans le sas!","color":"gray","bold":false,"italic":true}]}
-playsound random.orb master @p[x=-731,y=83,z=-1110,distance=..2]
+playsound entity.experience_orb.pickup master @p[x=-731,y=83,z=-1110,distance=..2]
 
 #Quand le joueur clique sur le bouton 
 tellraw @p[x=-731,y=83,z=-1111,distance=1..5] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - Placez-vous d'abord sur la plaque de pression, puis appuyez sur l'interrupteur en face si vous avez choisi votre classe!","color":"gray","bold":false,"italic":true}]}
@@ -49,7 +49,7 @@ tellraw @p[x=-731,y=83,z=-1111,distance=1..5] {"selector":"@p","color":"gray","b
 execute if entity @p[x=-731,y=83,z=-1112,distance=..1]
     playsound entity.player.levelup master @p[x=-731,y=83,z=-1110,distance=..2]
     scoreboard players set @p[x=-731,y=83,z=-1110,distance=..2] SORCIER 1
-    /give @p[x=-731,y=83,z=-1110,distance=..2] minecraft:written_book 1 0 {title:"INFERNO",author:"Calypso",pages:["{"text":' - Livre de magie -\n',"color":"gray","bold":true,"extra":[{"text":'\n \n'},{"text":' <= Incantation => ---------------- ',"color":gold,"bold":true},{"text":'\n _.-*^*-._.-*^*-._        INFERNO         _.-*^*-._.-*^*-._\n',"color":red,"bold":true,clickEvent:{action:run_command,value:'/scoreboard players set @p MAGIE 4'},hoverEvent:{action:show_text,value:'Cliquez ici pour lancer le sort! Coût : 20 Dahäl'}},{"text":'\n---------------- <= Incantation => \n',"color":gold,"bold":true}]}","[{"text":'    Description : \n',"color":black,"bold":true},{"text":'\nInvoque tout autour de vous une rafale de petites boules de feu enflammant ainsi vos ennemis.',"color":"blue","bold":false}]"]}
+    /give @p[x=-731,y=83,z=-1110,distance=..2] minecraft:written_book 1 {title:"INFERNO",author:"Calypso",pages:["{"text":' - Livre de magie -\n',"color":"gray","bold":true,"extra":[{"text":'\n \n'},{"text":' <= Incantation => ---------------- ',"color":gold,"bold":true},{"text":'\n _.-*^*-._.-*^*-._        INFERNO         _.-*^*-._.-*^*-._\n',"color":red,"bold":true,clickEvent:{action:run_command,value:'/scoreboard players set @p MAGIE 4'},hoverEvent:{action:show_text,value:'Cliquez ici pour lancer le sort! Coût : 20 Dahäl'}},{"text":'\n---------------- <= Incantation => \n',"color":gold,"bold":true}]}","[{"text":'    Description : \n',"color":black,"bold":true},{"text":'\nInvoque tout autour de vous une rafale de petites boules de feu enflammant ainsi vos ennemis.',"color":"blue","bold":false}]"]}
     tellraw @a {"selector":"@p","bold":true,"color":"gray","extra":[{"text":" a choisi la voie du Sorcier!","color":"gray","bold":false,"italic":true}]}
     scoreboard players add @p[x=-731,y=83,z=-1110,distance=..2] Chronoton 5
     #Eteindre la lumière porte
@@ -61,7 +61,7 @@ execute if entity @p[x=-731,y=83,z=-1112,distance=..1]
 
 ########## Chasseur
 tellraw @p[x=-738,y=83,z=-1094,distance=..2] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - (CHASSEUR : POSSEDE UN ARC + GENERATION D'UNE FLECHE TOUTE LES 30 SECONDES) Vous pouvez appuyer sur l'interrupteur, mais assurez-vous d'être seul dans le sas!","color":"gray","bold":false,"italic":true}]}
-playsound random.orb master @p[x=-738,y=83,z=-1096,distance=..2]
+playsound entity.experience_orb.pickup master @p[x=-738,y=83,z=-1096,distance=..2]
 
 #Quand le joueur clique sur le bouton 
 tellraw @p[x=-738,y=83,z=-1095,distance=1..5] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - Placez-vous d'abord sur la plaque de pression, puis appuyez sur l'interrupteur en face si vous avez choisi votre classe!","color":"gray","bold":false,"italic":true}]}
@@ -85,7 +85,7 @@ execute if entity @p[x=-738,y=83,z=-1094,distance=..1]
 
 ########## Alchimiste
 tellraw @p[x=-738,y=83,z=-1112,distance=..2] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - (ALCHIMISTE : POSSEDE POTION A BOIRE ET A LANCER + GENERE 1 POTION D'XP TOUTE LES 30 SECONDES) Vous pouvez appuyer sur l'interrupteur, mais assurez-vous d'être seul dans le sas!","color":"gray","bold":false,"italic":true}]}
-playsound random.orb master @p[x=-738,y=83,z=-1110,distance=..2]
+playsound entity.experience_orb.pickup master @p[x=-738,y=83,z=-1110,distance=..2]
 
 #Quand le joueur click sur le bouton 
 #Y'a pas une erreur sur la commande la genre ?
@@ -109,7 +109,7 @@ execute if entity @p[x=-738,y=83,z=-1112,distance=..1]
 
 ########## GUERISSEUR
 tellraw @p[x=-745,y=83,z=-1094,distance=..2] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - (GUERISSEUR : AURA DE REGAIN VIE, SOIGNANT FAIBLEMENT TOUT LES JOUEURS DANS UN RAYON DE 5) Vous pouvez appuyer sur l'interrupteur, mais assurez-vous d'être seul dans le sas!","color":"gray","bold":false,"italic":true}]}
-playsound random.orb master @p[x=-745,y=83,z=-1096,distance=..2]
+playsound entity.experience_orb.pickup master @p[x=-745,y=83,z=-1096,distance=..2]
     
 #Quand le joueur clique sur le bouton 
 tellraw @p[x=-745,y=83,z=-1095,distance=1..5] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - Placez-vous d'abord sur la plaque de pression, puis appuyez sur l'interrupteur en face si vous avez choisi votre classe!","color":"gray","bold":false,"italic":true}]}
@@ -130,7 +130,7 @@ execute if entity @p[x=-745,y=83,z=-1094,distance=..1]
 
 ########## Paysan
 tellraw @p[x=-745,y=83,z=-1112,distance=..2] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - (BOUSEUX : GAGNE 1 POINT DE NOURRITURE TOUTE LES 30 SECONDES) Vous pouvez appuyer sur l'interrupteur, mais assurez-vous d'être seul dans le sas!","color":"gray","bold":false,"italic":true}]}
-playsound random.orb master @p[x=-745,y=83,z=-1110,distance=..2]
+playsound entity.experience_orb.pickup master @p[x=-745,y=83,z=-1110,distance=..2]
 
 #Quand le joueur clique sur le bouton
 tellraw @p[x=-745,y=83,z=-1111,distance=1..5] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - Placez-vous d'abord sur la plaque de pression, puis appuyez sur l'interrupteur en face si vous avez choisi votre classe!","color":"gray","bold":false,"italic":true}]}
@@ -150,7 +150,7 @@ execute if entity @p[x=-745,y=83,z=-1112,distance=..1]
 
 ########## Ninja
 tellraw @p[x=-752,y=83,z=-1094,distance=..2] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - (NINJA : INVISIBLE A VIE + SORT DE RAPIDITE) Vous pouvez appuyer sur l'interrupteur, mais assurez-vous d'être seul dans le sas!","color":"gray","bold":false,"italic":true}]}
-playsound random.orb master @p[x=-752,y=83,z=-1096,distance=..2]
+playsound entity.experience_orb.pickup master @p[x=-752,y=83,z=-1096,distance=..2]
 
 #Quand le joueur click sur le bouton 
 tellraw @p[x=-752,y=83,z=-1095,distance=1..5] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - Placez-vous d'abord sur la plaque de pression, puis appuyez sur l'interrupteur en face si vous avez choisi votre classe!","color":"gray","bold":false,"italic":true}]}
@@ -171,7 +171,7 @@ execute if entity @p[x=-752,y=83,z=-1094,distance=..1]
 
 ########## DRUIDE
 tellraw @p[x=-752,y=83,z=-1112,distance=..2] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - (DRUIDE : SORT D'INVOCATION DE LOUPS + GENERATION D'UN OS TOUTE LES 30 SECONDES) Vous pouvez appuyer sur l'interrupteur, mais assurez-vous d'être seul dans le sas!","color":"gray","bold":false,"italic":true}]}
-playsound random.orb master @p[x=-752,y=83,z=-1110,distance=..2]
+playsound entity.experience_orb.pickup master @p[x=-752,y=83,z=-1110,distance=..2]
 
 #Quand le joueur click sur le bouton 
 tellraw @p[x=-752,y=83,z=-1111,distance=1..5] {"selector":"@p","color":"gray","bold":true,"extra":[{"text":" - Placez-vous d'abord sur la plaque de pression, puis appuyez sur l'interrupteur en face si vous avez choisi votre classe!","color":"gray","bold":false,"italic":true}]}

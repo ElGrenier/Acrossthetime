@@ -3,7 +3,7 @@ execute if entity @a[x=158,y=62,z=-1356,distance=..8,gamemode=adventure]
     playsound music_disc.cat music @a -144 59 -1350 10.0 1.0 1.0
     title @a subtitle {"text":" Gardient ancestral du temple Silvestre","color":"dark_gray","italic":true}
     title @a title {"text":"       Cédron       ","underlined":true,"color":"dark_red"}
-    summon silverfish 163 60 -1355 {PersistenceRequired:1b,DropChances:[1.0f,0.5f,0f,0f,0.1f],Equipment:[{id:nether_star,Count:1,tag:{display:{Name:"Ame de Cédron"}}},{id:378,Count:1,tag:{display:{Name:ECAILLE SOUVERAINE DU CHAOS,Lore:["Précieux!!","Très, TRES précieux........"]}}}],attributes:[{Name:max_health,Base:100,HealF:0.5},{Name:generic.attackDamage,Base:5.0},{Name:movement_speed,Base:0.3}],CustomName:Cédron,CustomNameVisible:1b}
+    summon silverfish 163 60 -1355 {PersistenceRequired:1b,DropChances:[1.0f,0.5f,0f,0f,0.1f],Equipment:[{id:nether_star,Count:1,tag:{display:{Name:"Ame de Cédron"}}},{id:378,Count:1,tag:{display:{Name:"ECAILLE SOUVERAINE DU CHAOS",Lore:["Précieux!!","Très, TRES précieux........"]}}}],attributes:[{Name:max_health,Base:100,HealF:0.5},{Name:generic.attackDamage,Base:5.0},{Name:movement_speed,Base:0.3}],CustomName:'{"text":"Cédron"}',CustomNameVisible:1b}
 
 
 #Si le boss meurt

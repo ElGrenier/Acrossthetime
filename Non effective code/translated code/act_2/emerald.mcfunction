@@ -20,7 +20,7 @@ tellraw @a {"text":"-°- Emerald : ","bold":true,"color":"dark_gray","extra":[{"
 
 tellraw @a {"selector":"@p","bold":true,"color":"dark_gray","extra":[{"text":" : <Débrouille-toi espèce d'ivrogne!>","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/setblock -43 69 -1236 redstone_block"}}]}
 #Mène a : 
-summon wolf -31 72 -1230 {Angry:1,PersistenceRequired:1b,Attributes:[{Name:generic.maxHealth,Base:20,HealF:0.5}],CustomName:Bunny,CustomNameVisible:1}
+summon wolf -31 72 -1230 {AngerTime:999999999,PersistenceRequired:1b,attributes:[{id:max_health,base:20}],CustomName:'{"text":"Bunny"}',CustomNameVisible:1b}
 tellraw @a {"text":"-°- Emerald : ","bold":true,"color":"dark_gray","extra":[{"text":"Ah si vous le prenez comme ça!!! Bunny attaque!!! HIP...","color":"dark_aqua","bold":false}]}
 #Empéchée l'ouverture de la porte du sous sols
 
