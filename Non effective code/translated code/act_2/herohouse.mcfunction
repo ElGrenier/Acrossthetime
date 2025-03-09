@@ -8,4 +8,4 @@ summon falling_block -282 109 -1241 {TileID:54,Time:1,Motion:[0.0,0.1,0.0],DropI
 #Casse le bouton pour acheter
 setblock -282 107 -1239 air
 #Change le bloc d'Emeraude en chiseled quartz block
-setblock -283 107 -1239 quartz_block 1
+setblock -283 107 -1239 chiseled_quartz_block
