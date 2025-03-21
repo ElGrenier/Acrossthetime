@@ -2,7 +2,7 @@
 # Make the particle, do the jump attack of NAMEGOT               #
 ##################################################################
 execute if score Timerattack NAMEGOT matches 0 at @e[type=wither_skeleton,tag=NAMEGOT] run playsound portal.trigger master @a ~ ~ ~ 1 0.1 1
-execute if score Timerattack NAMEGOT matches 0 at @e[type=wither_skeleton,tag=NAMEGOT] run function gameplay/boss/desolation/namegot/centertp
+execute if score Timerattack NAMEGOT matches 0 at @e[type=wither_skeleton,tag=NAMEGOT] run function att:gameplay/boss/desolation/namegot/centertp
 execute if score Timerattack NAMEGOT matches 5 at @e[type=wither_skeleton,tag=NAMEGOT] run particle item{item:orange_wool} ~ ~ ~ 1 1 1 0.1 100
 execute if score Timerattack NAMEGOT matches 10 at @e[type=wither_skeleton,tag=NAMEGOT] run particle item{item:orange_wool} ~ ~2 ~ 1 1 1 0.08 100
 execute if score Timerattack NAMEGOT matches 15 at @e[type=wither_skeleton,tag=NAMEGOT] run particle item{item:orange_wool} ~ ~3 ~ 1 1 1 0.06 100

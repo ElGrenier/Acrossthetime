@@ -15,7 +15,7 @@
 execute if score NAMEGOT NAMEGOT matches -1 in minecraft:the_nether if entity @a[x=3445,y=32,z=4323,dx=-40,dy=-18,dz=-40,gamemode=adventure] run function att:gameplay/boss/desolation/namegot/start
 
 # Execute all action of Namegot
-execute if score NAMEGOT NAMEGOT matches 0.. in minecraft:the_nether if entity @a[x=3445,y=32,z=4323,dx=-40,dy=-18,dz=-40,gamemode=adventure] run function att2:gameplay/boss/desolation/namegot/action
+execute if score NAMEGOT NAMEGOT matches 0.. in minecraft:the_nether if entity @a[x=3445,y=32,z=4323,dx=-40,dy=-18,dz=-40,gamemode=adventure] run function att:gameplay/boss/desolation/namegot/action
 
 execute if score NAMEGOT NAMEGOT matches 0.. positioned as @e[type=wither_skeleton,tag=NAMEGOT] run effect give @a[distance=..2] blindness 2
 execute if score NAMEGOT NAMEGOT matches 0.. positioned as @e[type=wither_skeleton,tag=NAMEGOT] run particle portal ~ ~1 ~ 0.3 0.3 0.3 1 50
