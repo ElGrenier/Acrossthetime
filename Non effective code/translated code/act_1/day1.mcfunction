@@ -15,7 +15,7 @@ tellraw @a {"text":"Voici un exemplaire de la déclaration des droits du Zombie!
 tellraw @a {"text":"Pas de Pub S.V.P!!","color":"dark_red"}
 
 #Quand le joueur donne l'exemplaire du droit du Zombie
-tellraw @a {"text":"Mission réussie!! Bravo, vous obtenez 5 $$$! Rentrez chez vous vous reposer, une longue journée vous attend!!","color":"gray"}
+tellraw @a {text:"Mission réussie!! Bravo, vous obtenez 5 $$$! Rentrez chez vous vous reposer, une longue journée vous attend!!","color":"gray"}
 scoreboard players add @a DOLLAR 5
 time set night
 

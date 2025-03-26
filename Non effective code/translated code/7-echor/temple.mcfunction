@@ -8,7 +8,7 @@ tellraw @a {"text":"Aleph","color":"dark_gray","italic":true}
 tellraw @a {"text":"tav","color":"dark_gray","italic":true}
 
 #All 3 lever oppened (Sidequest Golem de Fer)
-summon zombie -399 111 -1150 {PersistenceRequired:1b,attributes:[{id:max_health,base:60},{id:attack_damage,base:3.0}],DropChances:[0.01f,0.0f,0.0f,0.0f,0.0f],Equipment:[{id:276,Count:1},{id:301,Count:1,tag:{display:{color:65023}}},{id:300,Count:1,tag:{display:{color:65023}}},{id:299,Count:1,tag:{display:{color:65023}}},{id:79,Damage:0}]}
+summon zombie -399 111 -1150 {PersistenceRequired:1b,attributes:[{id:max_health,base:60},{id:attack_damage,base:3.0}],drop_chances:{mainhand:0.01f,head:0.0f,feet:0.0f,chest:0.0f,legs:0.0f},equipment:{mainhand:{id:diamond_sword,count:1},feet:{id:leather_boots,count:1,components:{dyed_color:65023}},legs:{id:leather_leggings,count:1,components:{dyed_color:65023}},chest:{id:leather_chestplate,count:1,components:{dyed_color:65023}}}}
 #^ x20
 playsound entity.experience_orb.pickup master @a
 scoreboard players add @a QUETESEC 1
@@ -21,7 +21,7 @@ tellraw @a {"text":"Mécanisme enclenché!","italic":true,"color":"gray"}
 
 #Gold lever 1
 playsound random.breath master @a
-summon zombie -489 14 -1266 {PersistenceRequired:1b,attributes:[{id:max_health,base:60},{id:attack_damage,base:3.0}],DropChances:[0.01f,0.0f,0.0f,0.0f,0.0f],Equipment:[{id:276,Count:1},{id:301,Count:1,tag:{display:{color:65023}}},{id:300,Count:1,tag:{display:{color:65023}}},{id:299,Count:1,tag:{display:{color:65023}}},{id:79,Damage:0}]}
+summon zombie -489 14 -1266 {PersistenceRequired:1b,attributes:[{id:max_health,base:60},{id:attack_damage,base:3.0}],drop_chances:{mainhand:0.01f,head:0.0f,feet:0.0f,chest:0.0f,legs:0.0f},equipment:{mainhand:{id:diamond_sword,count:1},feet:{id:leather_boots,count:1,components:{dyed_color:65023}},legs:{id:leather_leggings,count:1,components:{dyed_color:65023}},chest:{id:leather_chestplate,count:1,components:{dyed_color:65023}}}}
 #^ x6
 tellraw @a {"text":"Mécanisme arrêté! Une lumière s'est allumée dans la salle!","color":"gray","italic":true}
 setblock -481 14 -1252 air
