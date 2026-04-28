@@ -28,4 +28,5 @@ https://minecraft-ids.grahamedgecombe.com/potion-calculator
 # Common translation information : 
 
 random.orb = entity.experience_orb.pickup
+
 random.levelup = entity.player.levelup
